@@ -13,12 +13,12 @@
 //  If you specify typography styles for the components you use elsewhere, you should delete this line.
 //  If you don't need the default component typographies but still want the hierarchy styles,
 //  you can delete this line and instead use:
-//    `@include mat.legacy-typography-hierarchy(typography.$my-app-typography);`
-@include mat.all-legacy-component-typographies(typography.$my-app-typography);
-@include mat.legacy-core();
+//    `;`
+@include mat.typography-hierarchy(typography.$my-app-typography);
+@include mat.core();
 
-@include mat.legacy-core-theme(light.$my-app-light-theme);
-@include mat.legacy-button-theme(light.$my-app-light-theme);
+@include mat.core-theme(light.$my-app-light-theme);
+@include mat.button-theme(light.$my-app-light-theme);
 @include components.theme(
   light.$my-app-light-theme,
   typography.$my-app-typography,
